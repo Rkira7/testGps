@@ -32,7 +32,7 @@ class _AccessButtom extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Es necesario el acceso a GPS"),
+        const Text("Es necesario el acceso a GPS"),
         MaterialButton(
             child: Text("Solicitar Acceso",
                 style: probarcopy.copyWith(fontSize: 20, color: Colors.white)),
