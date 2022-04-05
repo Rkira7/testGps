@@ -41,7 +41,10 @@ class _AccessButtom extends StatelessWidget {
             elevation: 0,
             splashColor: Colors.transparent,
             onPressed: () {
-              //TODO: por hacer
+              //final gpsBloc = context.read<GpsBloc>();
+              final gpsBloc = BlocProvider.of<GpsBloc>(context);
+              gpsBloc.askGpsAccess();
+
             })
       ],
     );
